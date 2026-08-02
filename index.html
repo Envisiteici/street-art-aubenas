@@ -47,16 +47,14 @@
       <div class="works-list" id="works-list"></div>
     </section>
 
-
-    <section class="map-card">
-      <p class="map-intro" id="map-text"></p>
-
-      <a class="primary-button" id="map-link" href="#" target="_blank" rel="noopener">
-        <span>Retrouver toutes les œuvres sur la carte</span>
-        <svg class="map-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2V5zm6 0v14m6-14v14"/>
-        </svg>
-      </a>
+    <section class="progress-card progress-card-bottom" aria-label="Votre progression finale">
+      <div class="progress-line">
+        <strong id="progress-bottom-text">0 / 0 œuvres repérées</strong>
+        <span id="progress-bottom-percent">0 %</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progress-bottom-fill"></div>
+      </div>
     </section>
 
     <section class="bonus-card" id="bonus-card" hidden>
@@ -67,6 +65,19 @@
         <p id="bonus-text"></p>
       </div>
     </section>
+
+<section class="map-card">
+      <p class="map-intro" id="map-text"></p>
+
+      <a class="primary-button" id="map-link" href="#" target="_blank" rel="noopener">
+        <span>Retrouver toutes les œuvres sur la carte</span>
+        <svg class="map-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2V5zm6 0v14m6-14v14"/>
+        </svg>
+      </a>
+    </section>
+
+    
 
     <footer>
       <p id="update-date"></p>

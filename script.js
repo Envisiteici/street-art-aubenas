@@ -117,14 +117,30 @@
       `repérée${found > 1 ? "s" : ""}`;
 
     [
-      [els.progressTopText, els.progressTopPercent, els.progressTopFill]
-].forEach(([text, percentage, fill]) => {
+      [els.progressTopText, els.progressTopPercent, els.progressTopFill],
+      [els.progressBottomText, els.progressBottomPercent, els.progressBottomFill]
+    ].forEach(([text, percentage, fill]) => {
       text.textContent = label;
       percentage.textContent = `${percent} %`;
       fill.style.width = `${percent}%`;
     });
 
-    els.bonusCard.hidden = !(total > 0 && found === total);
+    const finished = total > 0 && found === total;
+
+    els.bonusCard.hidden = !finished;
+
+    if (finished) {
+      els.mapText.textContent =
+        "Félicitations ! Votre œuvre bonus vous attend désormais sur la carte.";
+      els.mapLink.href = data.visite.lienCarteBonus;
+      els.mapLink.querySelector("span").textContent =
+        "Découvrir l’œuvre bonus sur la carte";
+    } else {
+      els.mapText.textContent = data.visite.texteCarte;
+      els.mapLink.href = data.visite.lienCarte;
+      els.mapLink.querySelector("span").textContent =
+        "Retrouver toutes les œuvres sur la carte";
+    }
   }
 
   els.resetButton.addEventListener("click", () => {

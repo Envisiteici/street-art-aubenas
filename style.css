@@ -3,14 +3,15 @@
    Inspirées du flyer : corail, noir, blanc cassé.
    ========================================================= */
 :root {
-  --coral: #e86f5a;
-  --coral-dark: #c95544;
-  --coral-soft: #fff0ec;
-  --ink: #171717;
-  --muted: #6b625f;
-  --paper: #fffaf7;
-  --white: #ffffff;
-  --line: #eadfd9;
+  --coral: #EF9278;
+  --coral-dark: #D9684E;
+  --coral-soft: #FFF0EA;
+  --accent-orange: #FF7828;
+  --ink: #343A3D;
+  --muted: #6B625F;
+  --paper: #FFFAF7;
+  --white: #FFFFFF;
+  --line: #EADFD9;
   --shadow: 0 10px 28px rgba(60, 36, 28, 0.09);
   --radius: 22px;
 }
@@ -117,7 +118,7 @@ h1 {
   width: 0;
   height: 100%;
   border-radius: inherit;
-  background: var(--coral);
+  background: var(--accent-orange);
   transition: width .22s ease;
 }
 
@@ -158,7 +159,7 @@ h1 {
   width: 28px;
   height: 28px;
   margin: 0;
-  accent-color: var(--coral);
+  accent-color: var(--accent-orange);
   cursor: pointer;
 }
 

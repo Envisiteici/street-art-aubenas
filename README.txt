@@ -1,1 +1,6 @@
-V2.3 : bonus avant la carte, texte et lien de carte adaptatifs (lien bonus prêt à être remplacé).
+V2.4
+- suppression de la barre de progression du bas ;
+- bonus placé avant la carte ;
+- texte du bonus réécrit ;
+- texte de la carte simplifié après déblocage ;
+- liens carte / carte bonus prêts.

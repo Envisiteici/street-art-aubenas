@@ -25,9 +25,6 @@
     progressTopText: document.getElementById("progress-top-text"),
     progressTopPercent: document.getElementById("progress-top-percent"),
     progressTopFill: document.getElementById("progress-top-fill"),
-    progressBottomText: document.getElementById("progress-bottom-text"),
-    progressBottomPercent: document.getElementById("progress-bottom-percent"),
-    progressBottomFill: document.getElementById("progress-bottom-fill")
   };
 
   let checkedIds = loadProgress();
@@ -54,8 +51,8 @@
     els.mapLink.href = data.visite.lienCarte;
     els.updateDate.textContent =
       `Liste vérifiée : ${data.visite.derniereMiseAJour}`;
-    els.bonusName.textContent = data.bonus.nom;
-    els.bonusText.textContent = data.bonus.texte;
+    els.bonusName.textContent = "⭐ Œuvre bonus débloquée";
+    els.bonusText.textContent = "Félicitations ! Vous avez repéré toutes les œuvres de la visite. Une œuvre bonus, située hors du parcours, vous attend désormais sur la carte.";
   }
 
   function renderWorks() {
@@ -117,8 +114,7 @@
       `repérée${found > 1 ? "s" : ""}`;
 
     [
-      [els.progressTopText, els.progressTopPercent, els.progressTopFill],
-      [els.progressBottomText, els.progressBottomPercent, els.progressBottomFill]
+      [els.progressTopText, els.progressTopPercent, els.progressTopFill]
     ].forEach(([text, percentage, fill]) => {
       text.textContent = label;
       percentage.textContent = `${percent} %`;
@@ -131,7 +127,7 @@
 
     if (finished) {
       els.mapText.textContent =
-        "Félicitations ! Votre œuvre bonus vous attend désormais sur la carte.";
+        "Découvrez maintenant cette œuvre bonus sur la carte.";
       els.mapLink.href = data.visite.lienCarteBonus;
       els.mapLink.querySelector("span").textContent =
         "Découvrir l’œuvre bonus sur la carte";

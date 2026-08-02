@@ -32,7 +32,7 @@ window.CARNET_DATA = {
     { id: "crane-animal", nom: "Un crâne d’animal" },
     { id: "fantome-souriant", nom: "Un fantôme souriant" },
     { id: "pochoir-feministe", nom: "Un pochoir féministe" },
-    { id: "bouddha-chaplin-winnie", nom: "Bouddha, Charlie Chaplin et Winnie l’Ourson" },
+    { id: "bouddha-chaplin-winnie", nom: "Bouddha, Chaplin & Winnie" },
     { id: "armoiries-aubenas", nom: "Les armoiries d’Aubenas" },
     { id: "coeur-rouge", nom: "Un cœur rouge" },
     { id: "nichoir-fleuri", nom: "Un nichoir fleuri" },

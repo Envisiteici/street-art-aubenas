@@ -139,11 +139,16 @@ h1 {
   background: var(--white);
   box-shadow: 0 5px 16px rgba(60, 36, 28, 0.055);
   cursor: pointer;
-  transition: transform .15s ease, background .2s ease, border-color .2s ease;
-  -webkit-tap-highlight-color: transparent;
+transition:
+  background-color .22s ease,
+  border-color .22s ease,
+  transform .12s ease,
+  box-shadow .12s ease;
 }
 
-.work-item:active { transform: scale(.99); }
+.work-item:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 7px rgba(60,36,28,.04);
 
 .work-item:has(input:focus-visible) {
   outline: 3px solid rgba(232,111,90,.28);

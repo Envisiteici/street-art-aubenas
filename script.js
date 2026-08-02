@@ -117,9 +117,8 @@
       `repérée${found > 1 ? "s" : ""}`;
 
     [
-      [els.progressTopText, els.progressTopPercent, els.progressTopFill],
-      [els.progressBottomText, els.progressBottomPercent, els.progressBottomFill]
-    ].forEach(([text, percentage, fill]) => {
+      [els.progressTopText, els.progressTopPercent, els.progressTopFill]
+].forEach(([text, percentage, fill]) => {
       text.textContent = label;
       percentage.textContent = `${percent} %`;
       fill.style.width = `${percent}%`;

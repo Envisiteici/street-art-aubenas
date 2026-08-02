@@ -1,59 +1,30 @@
-CARNET D’EXPLORATION — STREET ART À AUBENAS — V2
-====================================================
+CARNET D’EXPLORATION — V2.1 COMPLÈTE
+=====================================
 
-Cette version contient la vraie liste des huit œuvres, sans pictogrammes,
-sans techniques et sans phrase supplémentaire en bas.
+Cette version est complète et prête à remplacer la V1 sur GitHub.
 
-FICHIER À MODIFIER
-------------------
-Dans la majorité des cas, ouvre seulement « data.js ».
-
-Tu peux y modifier :
-- les textes ;
-- le lien de la carte uMap ;
-- la date de mise à jour ;
-- les œuvres et leur ordre ;
-- le texte de l’œuvre bonus.
-
-AJOUTER UNE ŒUVRE
------------------
-Dans la partie « oeuvres », copie une ligne :
-
-{ id: "nom-court-unique", nom: "Nom visible par les visiteurs" },
-
-Puis adapte les deux valeurs.
-
-SUPPRIMER UNE ŒUVRE
--------------------
-Supprime simplement sa ligne.
-
-CHANGER L’ORDRE
----------------
-Déplace les lignes. L’ordre du fichier est l’ordre affiché.
-
-CASES COCHÉES
--------------
-La progression est enregistrée uniquement dans le navigateur du visiteur.
-
-Lorsque tu modifies fortement la liste, augmente :
-version: "2"
-en :
-version: "3"
-
-Cela remet à zéro les cases conservées pour l’ancienne version.
-
-CARTE
------
-Remplace dans « data.js » :
-lienCarte: "https://umap.openstreetmap.fr/"
-
-par le lien exact de ta carte.
+Elle contient :
+- tout le design V2 ;
+- les 8 œuvres ;
+- la sauvegarde des cases cochées ;
+- la progression dynamique en haut et en bas ;
+- le vrai lien uMap ;
+- le bouton final validé avec l’icône sous le texte ;
+- l’œuvre bonus ;
+- le fond orangé progressif ;
+- le léger enfoncement au toucher ;
+- le trait barré qui se dessine lentement.
 
 TESTER
 ------
-Double-clique sur « index.html ».
+Décompresse le dossier puis ouvre index.html.
 
-MISE EN LIGNE
--------------
-Le dossier est prêt pour un hébergement statique gratuit.
-Les cinq fichiers doivent rester ensemble au même niveau.
+PUBLIER SUR GITHUB
+------------------
+Remplace dans ton dépôt :
+- index.html
+- style.css
+- data.js
+- script.js
+
+README.txt n’est pas nécessaire au fonctionnement.

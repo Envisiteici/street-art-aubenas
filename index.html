@@ -3,16 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#e86f5a">
+  <meta name="theme-color" content="#ef8f75">
   <meta name="description" content="Carnet d'exploration de la visite Street Art à Aubenas">
   <title>Carnet d'exploration — Street Art à Aubenas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-backdrop" aria-hidden="true"></div>
+
   <main class="page">
     <header class="hero">
       <p class="eyebrow" id="visit-title">Street Art à Aubenas</p>
-      <h1 id="notebook-title">Carnet d'exploration</h1>
+
+      <div class="title-wrap">
+        <h1 id="notebook-title">Carnet d'exploration</h1>
+        <svg class="title-underline" viewBox="0 0 320 22" aria-hidden="true">
+          <path d="M3 13 C58 7,112 17,168 10 S268 8,317 12"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="5"
+                stroke-linecap="round"/>
+        </svg>
+      </div>
+
       <p class="intro" id="intro-text"></p>
     </header>
 
@@ -42,10 +58,13 @@
     </section>
 
     <section class="map-card">
-      <h2>Poursuivre l'exploration</h2>
-      <p id="map-text"></p>
+      <p class="map-intro" id="map-text"></p>
+
       <a class="primary-button" id="map-link" href="#" target="_blank" rel="noopener">
-        Ouvrir la carte interactive
+        <span>Retrouver toutes les œuvres sur la carte</span>
+        <svg class="map-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2V5zm6 0v14m6-14v14"/>
+        </svg>
       </a>
     </section>
 

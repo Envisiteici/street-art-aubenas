@@ -2,6 +2,7 @@
   "use strict";
 
   const data = window.CARNET_DATA;
+
   if (!data) {
     document.body.innerHTML = "<p>Impossible de charger le carnet.</p>";
     return;
@@ -83,6 +84,7 @@
         } else {
           checkedIds.delete(work.id);
         }
+
         saveProgress();
         updateInterface();
       });
@@ -95,7 +97,9 @@
 
   function updateInterface() {
     const validIds = new Set(data.oeuvres.map((work) => work.id));
-    checkedIds = new Set([...checkedIds].filter((id) => validIds.has(id)));
+    checkedIds = new Set(
+      [...checkedIds].filter((id) => validIds.has(id))
+    );
 
     document.querySelectorAll(".work-item").forEach((item) => {
       const checkbox = item.querySelector(".work-checkbox");
@@ -104,8 +108,13 @@
 
     const found = checkedIds.size;
     const total = data.oeuvres.length;
-    const percent = total === 0 ? 0 : Math.round((found / total) * 100);
-    const label = `${found} / ${total} œuvre${total > 1 ? "s" : ""} repérée${found > 1 ? "s" : ""}`;
+    const percent = total === 0
+      ? 0
+      : Math.round((found / total) * 100);
+
+    const label =
+      `${found} / ${total} œuvre${total > 1 ? "s" : ""} ` +
+      `repérée${found > 1 ? "s" : ""}`;
 
     [
       [els.progressTopText, els.progressTopPercent, els.progressTopFill],
@@ -123,7 +132,10 @@
     const confirmed = window.confirm(
       "Remettre toutes les cases du carnet à zéro ?"
     );
-    if (!confirmed) return;
+
+    if (!confirmed) {
+      return;
+    }
 
     checkedIds.clear();
     saveProgress();

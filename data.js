@@ -20,12 +20,12 @@ window.CARNET_DATA = {
     introduction:
       "Pendant les déplacements de la visite, observez les rues et cochez les œuvres que vous repérez. Pas d’inquiétude si certaines vous échappent : la carte vous permettra de les retrouver ensuite.",
     texteCarte:
-      "Vous n’avez pas tout repéré ? Retrouvez les œuvres de la visite sur la carte interactive et poursuivez votre découverte à votre rythme.",
-    lienCarte: "https://umap.openstreetmap.fr/fr/map/aubenas-street-art_1440976",
+      "Vous n'avez pas tout repéré ? Poursuivez votre découverte à votre rythme.",
+    lienCarte:
+      "https://umap.openstreetmap.fr/fr/map/aubenas-street-art_1440976",
     derniereMiseAJour: "Août 2026"
   },
 
-  // ===== ORDRE DES ŒUVRES DE LA VISITE =====
   oeuvres: [
     { id: "crane-animal", nom: "Un crâne d’animal" },
     { id: "fantome-souriant", nom: "Un fantôme souriant" },

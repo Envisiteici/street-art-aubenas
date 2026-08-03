@@ -30,12 +30,12 @@ window.CARNET_DATA = {
 
   oeuvres: [
     { id: "crane-animal", nom: "Un crâne d’animal" },
-    { id: "fantome-souriant", nom: "Un fantôme souriant" },
     { id: "pochoir-feministe", nom: "Un slogan féministe" },
     { id: "bouddha-chaplin-winnie", nom: "Bouddha, Chaplin & Winnie" },
     { id: "armoiries-aubenas", nom: "Les armoiries d’Aubenas" },
     { id: "coeur-rouge", nom: "Un cœur rouge" },
     { id: "nichoir-fleuri", nom: "Un nichoir fleuri" },
+    { id: "fantome-qui-sourit", nom: "Un fantôme qui sourit" },
     { id: "coeur-jaune", nom: "Un cœur jaune" }
   ],
 

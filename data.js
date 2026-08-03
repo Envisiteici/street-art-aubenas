@@ -24,7 +24,7 @@ window.CARNET_DATA = {
     lienCarte:
       "https://umap.openstreetmap.fr/fr/map/aubenas-street-art_1440976",
     lienCarteBonus:
-      "https://umap.openstreetmap.fr/fr/map/aubenas-street-art_1440976",
+      "https://umap.openstreetmap.fr/fr/map/aubenas-street-art-bonus_1441562",
     derniereMiseAJour: "Août 2026"
   },
 
